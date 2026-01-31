@@ -448,3 +448,28 @@ h1 {
   font-weight: bold;
   text-shadow: 0 0 10px #00ffff;
 }
+.main-facebook-btn {
+  display: block;
+  text-decoration: none;
+}
+
+.big-facebook-card {
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.big-facebook-card:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 20px rgba(0,255,255,0.5),
+    0 0 50px rgba(0,255,255,0.8);
+}
+
+.main-fb-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 12px #00ffff;
+}
