@@ -277,3 +277,21 @@ h1 {
 .section-title {
   animation: glow 2s infinite;
 }
+.card {
+  background: #111;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.glow {
+  color: #00f7ff;
+  text-shadow:
+    0 0 5px #00f7ff,
+    0 0 15px #00f7ff,
+    0 0 30px #00f7ff;
+}
