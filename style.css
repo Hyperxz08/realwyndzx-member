@@ -425,3 +425,26 @@ h1 {
   font-size: 12px;
   opacity: 0.7;
 }
+.facebook-link {
+  text-decoration: none;
+  display: block;
+}
+
+.big-facebook-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.big-facebook-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0,255,255,0.6);
+}
+
+.fb-text {
+  margin-top: 20px;
+  text-align: center;
+  color: #00ffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff;
+}
