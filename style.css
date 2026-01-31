@@ -1,0 +1,279 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* พื้นหลัง */
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* เลเยอร์ดำทับ */
+.overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+}
+
+
+h1 {
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    background: #141414;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+a {
+    background: #1877f2;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+/* ===== Animation ===== */
+body {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* หมวดหมู่ */
+.role-title {
+  margin-top: 50px;
+  font-size: 26px;
+  letter-spacing: 4px;
+  animation: slideUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.admin { color: #ff4d4d; animation-delay: 0.2s; }
+.support { color: #4da6ff; animation-delay: 0.4s; }
+.member { color: #4dff88; animation-delay: 0.6s; }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ตาราง */
+.member-table {
+  width: 70%;
+  margin: 20px auto 40px;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease;
+}
+
+.member-table td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+/* ปุ่ม Facebook */
+.fb-btn {
+  padding: 8px 18px;
+  background: #1877f2;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(24,119,242,0.5);
+}
+
+.fb-btn:hover {
+  background: #3b8cff;
+  box-shadow: 0 0 20px rgba(24,119,242,0.9);
+  transform: scale(1.05);
+}
+.member-table tr {
+  transition: 0.3s;
+}
+
+.member-table tr:hover {
+  background: rgba(255,255,255,0.05);
+  transform: scale(1.01);
+}
+.toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle:hover {
+  opacity: 0.8;
+}
+
+/* ซ่อนตารางเริ่มต้น (ถ้าอยากให้พับก่อน) */
+/*
+#adminTable,
+#supportTable,
+#memberTable {
+  display: none;
+}
+*/
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .role-title {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  input#search {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+/* แตะแล้วลื่น */
+.toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+/* จัดทุกอย่างให้อยู่ตรงกลาง */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* หัวเว็บ */
+h1 {
+  text-align: center;
+}
+
+/* ช่องค้นหา */
+#search {
+  display: block;
+  margin: 20px auto 40px auto;
+}
+
+/* หัวหมวด ADMIN / SUPPORT / MEMBER */
+.section-title {
+  text-align: center;
+  margin: 60px 0 20px;
+}
+/* หัวหมวดพื้นฐาน */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 60px 0 20px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+/* 🔴 ADMIN แดงเรืองแสง */
+.admin {
+  color: #ff3b3b;
+  text-shadow:
+    0 0 5px #ff3b3b,
+    0 0 10px #ff3b3b,
+    0 0 20px #ff0000;
+}
+
+/* 🔵 SUPPORT ฟ้าเรืองแสง */
+.support {
+  color: #4da6ff;
+  text-shadow:
+    0 0 5px #4da6ff,
+    0 0 10px #4da6ff,
+    0 0 20px #007bff;
+}
+
+/* 🟢 MEMBER เขียวเรืองแสง */
+.member {
+  color: #3cff7a;
+  text-shadow:
+    0 0 5px #3cff7a,
+    0 0 10px #3cff7a,
+    0 0 20px #00ff55;
+}
+@keyframes glow {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.section-title {
+  animation: glow 2s infinite;
+}
